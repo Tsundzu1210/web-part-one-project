@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+<img src="./images/tee.webp" alt="my web logo"class="logo" width="80" height="55">
+<link rel="stylesheet" href="styling/index.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- navigation bar -->
+    <nav>
+        <a href="Home.html"><i class="fas fa-home"></i>Home</a></br>
+        <a href="Catalog.html"><i class="fas fa-th-list"></i>Catalog</a></br>
+        <a href="Checkout.html"><i class="fas fa-shopping-cart"></i>checkout</a></br>
+        <a href="Blog.html"><i class="fas fa-blog"></i>blog</a></br>
+        <a href="Contact.html"><i class="fas fa-envelope"></i>Contact</a></br>
+        <a href="Storelocator.html"><i class="fas fa-map-marker-alt"></i>storelocator</a></br>
+        <a href="Loyalty.html"><i class="fas fa-gift"></i>Loyalty</a></br>
+     </nav>
+            
+            <form action="/place-order" method="post">
+
+       <section>
+        <h2>contact information</h2>
+        <p>
+            <label for="email">email</label><br>
+             <input type="email" id="email"name="email"required>
+         </p>
+      
+            <p>
+               <label for="phone">mobile Number </label><br>
+                 <input type="tel"id="phone"name="phone"placeholder="+27 76 321 7681" required>
+      
+               </p>
+             </section>
+
+             <section>
+              <!-- personal information -->
+                <p>
+                    <label for="fname">first name</label><br>
+                     <input type="fname" id="fname"name="fname"required>
+                 </p>
+              
+                    <p>
+                       <label for="lname">Last name </label><br>
+                         <input type="text"id="lname"name="lname"required>
+              
+                       </p>
+              
+                           <p>
+                            <!-- physical address -->
+                              <label for="address">Address</label><br>
+                              <input type="text"id="address"name="address"required>
+              
+                             </p>
+                                 <p>
+                                   <label for="City">City</label><br>
+                                    <input type="text" id="City" name="City"required>
+              
+                           </p>
+               
+                     <p>
+                <!-- provinces you have to select from -->
+                      <label for="province">select province:</label>
+                       <select name="province" id="province" required>
+                      <option value="">choose a province</option>
+                      <option>limpopo</option>
+                       <option>Gauteng</option>
+                       <option>North West</option>
+                      <option>westen Cape</option>
+                       <option>free state</option>
+                      <option>Northern Cape</option>
+                      <option>Mpumalanga</option>
+                       <option>kwazulu-natal</option>
+                      <option>Eastern Cape</option>
+                     </select>
+                     </p>
+            <p>
+                <label for="postal">postal code</label>
+                <input type="text"id="postal" name="postal"required>
+            </p>
+        </section>
+
+        <section>
+          <!-- heading -->
+         <h2>delivery method</h2>
+           <p>
+            <!-- delivery section -->
+            <label><input type= "radio" name="delivery" value="standard" required>standard courier (2-5 days)-R65</label><br>
+            <label><input type= "radio" name="delivery" value="next day" required>next day courier (1-2days)-R130</label><br>
+            <label><input type= "radio" name="delivery" value="pickup">click & collect(free)</label><br>
+        
+           </p>
+           </section>
+           <section>
+            <!-- heading -->
+            <h2>payment method</h2>
+            <!-- payment -->
+            <p>
+              <label><input type="radio"name="payment"value=payfast required>payfast</label><br>
+              <label><input type="radio"name="payment"value=snapscan>snapscan</label><br>
+              <label><input type="radio"name="payment"value=card >debit/credit</label><br>
+            </p>
+
+           </section>
+           <section>
+            <h2>order summary</h2>
+            <!--A table showing your oder which shows you the items you selected with the prices and total-->
+            <table border="1" width="100%" cellpadding="5">
+              <thead>
+                <tr>
+                  <th align="left">item</th>
+                  <th align="right">Qty</th>
+                  <th align="right">price</th>
+                  <th align="right">total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <!-- phone with the price -->
+                  <td>Phone </td>
+                  <td align="right">1</td>
+                  <td align="right">R6,599</td>
+                  <td align="right">R6,599</td>
+                </tr>
+                <!-- the charger with a price -->
+                <tr>
+                  <td>USB-C charger</td>
+                  <td align="right">1</td>
+                  <td align="right">R150</td>
+                  <td align="right">R150</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <!-- the total -->
+                  <td colspan="3"align="right"<strong>total</strong></td>
+                  <td align="right"><strong>R6,750</strong></td>
+                </tr>
+              </tfoot>
+
+            </table>
+           </section>
+
+           <section>
+            <!-- the smallbox to tick to show that you agree with our rules -->
+            <p>
+              <label><input type="checkbox"required>I agree to the terms and conditions</label>
+            </p>
+           </section>
+           <section>
+            <p>
+              <!-- A button to submit your oder -->
+            <button type="submit"> oder here </button>
+            </p>
+           </section>
+
+
+            </form>
+        <!-- footer -->
+            <footer>
+              <p>&copy; 2025 Smart"Tee"devices</p>
+            <p>follow us:<br>
+                <a href="https://facebook.com"target="blank"><i class="fab fa-facebook"></i>facebook</a><br>
+             <a href="https://twitter.com"target="blank"><i class="fab fa-twitter"></i>twitter</a><br>
+             <a href="https://instagram.com"target="blank"><i class="fab fa-instagram"></i>instagram</a><br>
+       </p>
+           </footer>
+       
+            
+</body>
+</html>
